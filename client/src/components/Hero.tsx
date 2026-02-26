@@ -177,7 +177,7 @@ export function Hero() {
               </button>
 
               <button
-                onClick={() => scrollToSection("inquiry-top")}
+                onClick={() => scrollToSection("inquiry-bottom")}
                 className="px-8 py-4 border-2 border-[#E91E8C] text-[#E91E8C] font-bold rounded-full hover:bg-[#E91E8C] hover:text-white transition-all duration-300 transform hover:scale-105 bg-white shadow-lg"
               >
                 {t("hero.cta2")}

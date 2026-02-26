@@ -52,7 +52,7 @@ export function Navbar() {
       twoLine: true,
     },
     { id: "brochure", label: t("nav.downloadBrochure") },
-    { id: "inquiry-top", label: t("nav.inquiry") },
+    { id: "inquiry-bottom", label: t("nav.inquiry") },
   ];
 
   return (

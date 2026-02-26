@@ -117,7 +117,7 @@ export function Footer() {
                 </li>
                 <li>
                   <button
-                    onClick={() => scrollToSection("inquiry-top")}
+                    onClick={() => scrollToSection("inquiry-bottom")}
                     className="hover:text-white transition-colors"
                   >
                     {t("nav.inquiry", "Inquiry")}

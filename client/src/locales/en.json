@@ -61,10 +61,30 @@
   "products": {
   "title": "Product Showcase",
   "subtitle": "Explore our core product categories designed for international markets. For detailed specifications, packaging formats, and the complete product portfolio, please refer to our official brochure.",
+
   "cookies": "Cookies",
   "savoury_biscuit": "Savoury Biscuit",
   "swiss_roll": "Swiss Roll",
   "special_cake_range": "Special Cake Range",
+
+  "khari": "Khari",
+  "twisted_khari": "Twisted Khari",
+  "rusk": "Rusk",
+  "bar_cake": "Bar Cake",
+  "muffins": "Muffins",
+  "tiffin_cake": "Tiffin Cake",
+  "slice_cake": "Slice Cake",
+  "special_cakes_range": "Special Cakes Range",
+
+  "fullRange": "Full Range",
+  "allCategoriesTitle": "All Product Categories",
+  "allCategoriesSubtitle": "From classic favourites to festive specialities",
+
+  "signatureCollections": "Our Signature Collections",
+  "exploreAll": "Explore All Categories",
+  "categoryList": "Cookies · Khari · Rusk · Muffins · Cakes & more",
+
+  "modalTitle": "Looking for detailed product specifications?",
   "brochureBlurb": "Looking for detailed product specifications, packaging formats, and complete SKU listings? Access our official brochure for the full export portfolio.",
   "downloadBrochure": "View Brochure Details"
 },
@@ -120,9 +140,27 @@
     }
   },
   "quality": {
-    "title": "Quality & Certifications",
-    "subtitle": "Our Certifications Reflect Our Commitment to Delivering World-Class Bakery Products"
-  },
+  "title": "Quality & Certifications",
+  "subtitle": "Our Certifications Reflect Our Commitment to Delivering World-Class Bakery Products",
+
+  "whyChooseUs": "Why Choose Us",
+  "certificationsTitle": "Our Certifications",
+  "facilitiesTitle": "Our Facilities",
+
+  "highlight1Title": "Globally Recognized Certifications",
+  "highlight1Desc": "Our products proudly carry FSSAI, Halal, and FSSC 22000 certifications—assuring top-tier food safety, quality and market compliance across diverse regions.",
+
+  "highlight2Title": "Robust Quality Infrastructure",
+  "highlight2Desc": "Equipped with ultra-modern QC & QA laboratories, our facilities guarantee consistency, taste and premium quality in every batch.",
+
+  "highlight3Title": "Continuous Innovation",
+  "highlight3Desc": "A dedicated R&D center enables us to develop and expand our product range—adapting swiftly to evolving consumer preferences and export market trends.",
+
+  "facility1": "Manufacturing Facility",
+  "facility2": "Quality Control Lab",
+  "facility3": "Production Line",
+  "facility4": "R&D Center"
+},
   "footer": {
     "copyright": "© 2025 Monginis. All Rights Reserved."
   },

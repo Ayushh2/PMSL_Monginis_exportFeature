@@ -23,7 +23,6 @@ export function App() {
       <Navbar />
       <main className="w-full overflow-x-hidden">
         <Hero />
-        <InquiryForm formId="inquiry-top" />
         <ProductShowcase />
         <About />
         <WhyMonginis />

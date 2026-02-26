@@ -61,10 +61,30 @@
  "products": {
   "title": "Présentation des produits",
   "subtitle": "Découvrez nos principales catégories de produits conçues pour les marchés internationaux. Pour des spécifications détaillées, les formats d’emballage et le portefeuille complet de produits, veuillez consulter notre brochure officielle.",
+
   "cookies": "Cookies",
   "savoury_biscuit": "Biscuits salés",
   "swiss_roll": "Roulé suisse",
   "special_cake_range": "Gamme de gâteaux spéciaux",
+
+  "khari": "Khari",
+  "twisted_khari": "Khari torsadé",
+  "rusk": "Biscotte (Rusk)",
+  "bar_cake": "Cake en barre",
+  "muffins": "Muffins",
+  "tiffin_cake": "Gâteau Tiffin",
+  "slice_cake": "Gâteau en tranches",
+  "special_cakes_range": "Gamme de gâteaux spéciaux",
+
+  "fullRange": "Gamme complète",
+  "allCategoriesTitle": "Toutes les catégories de produits",
+  "allCategoriesSubtitle": "Des classiques aux spécialités festives",
+
+  "signatureCollections": "Nos collections signature",
+  "exploreAll": "Explorer toutes les catégories",
+  "categoryList": "Cookies · Khari · Biscotte · Muffins · Gâteaux et plus",
+
+  "modalTitle": "Vous recherchez des spécifications détaillées ?",
   "brochureBlurb": "Vous recherchez des spécifications détaillées des produits, des formats d’emballage et la liste complète des références (SKU) ? Consultez notre brochure officielle pour découvrir l’ensemble de notre portefeuille export.",
   "downloadBrochure": "Voir les détails de la brochure"
 },
@@ -120,9 +140,27 @@
     }
   },
   "quality": {
-    "title": "Qualité et certifications",
-    "subtitle": "Nos certifications reflètent notre engagement à livrer des produits de boulangerie de classe mondiale"
-  },
+  "title": "Qualité et certifications",
+  "subtitle": "Nos certifications reflètent notre engagement à livrer des produits de boulangerie de classe mondiale",
+
+  "whyChooseUs": "Pourquoi nous choisir",
+  "certificationsTitle": "Nos certifications",
+  "facilitiesTitle": "Nos installations",
+
+  "highlight1Title": "Certifications reconnues mondialement",
+  "highlight1Desc": "Nos produits disposent des certifications FSSAI, Halal et FSSC 22000, garantissant une sécurité alimentaire, une qualité et une conformité optimales sur divers marchés.",
+
+  "highlight2Title": "Infrastructure qualité robuste",
+  "highlight2Desc": "Dotées de laboratoires QC & QA ultra-modernes, nos installations assurent la constance, le goût et une qualité premium à chaque lot.",
+
+  "highlight3Title": "Innovation continue",
+  "highlight3Desc": "Un centre R&D dédié nous permet de développer et d’élargir notre gamme de produits, en nous adaptant rapidement aux préférences des consommateurs et aux tendances des marchés d’exportation.",
+
+  "facility1": "Site de fabrication",
+  "facility2": "Laboratoire de contrôle qualité",
+  "facility3": "Ligne de production",
+  "facility4": "Centre R&D"
+},
   "footer": {
     "copyright": "© 2025 Monginis. Tous droits réservés."
   },
