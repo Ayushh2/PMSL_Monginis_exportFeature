@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "Über Monginis Exports",
+    "products": "Produktkategorie",
+    "quality": "Qualität & Zertifizierungen",
+    "inquiry": "Exportanfrage"
+  },
+  "navContact": {
+    "phone": "+91 9876543210",
+    "email": "exports@monginis.com"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "nl": "Nederlands",
+    "pl": "Polski"
+  },
+  "hero": {
+    "title": "Monginis — Ein Vermächtnis süßer Feierlichkeiten, jetzt über Grenzen hinweg",
+    "subtitle": "Indiens ikonische Bäckereimarke mit über 120 Jahren Vertrauen und Innovation",
+    "tagline": "Globale Lächeln backen — Von Indien in die Welt",
+    "cta1": "Produkte entdecken",
+    "cta2": "Anfrage stellen"
+  },
+  "inquiry": {
+    "title": "Exportanfrage",
+    "subtitle": "Bringen Sie den Geschmack der Exzellenz nach Hause, der seit Generationen geliebt wird",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "submit": "Absenden",
+    "success": "Vielen Dank! Wir melden uns in Kürze bei Ihnen.",
+    "error": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut."
+  },
+  "products": {
+    "title": "Produktpräsentation",
+    "subtitle": "Entdecken Sie unsere breite Palette köstlicher Backwaren, mit Liebe hergestellt, um Süße in jede Feier zu bringen",
+    "cookies": "Kekse",
+    "khari": "Khari",
+    "biscuit": "Keks",
+    "muffin": "Muffin",
+    "downloadSpec": "Spezifikationsblatt herunterladen"
+  },
+  "about": {
+    "title": "Exzellenz durch Innovation gebacken",
+    "description": "Monginis begann Anfang der 1900er Jahre in Mumbai als charmante Bäckerei, gegründet von zwei italienischen Brüdern. 1956 von der Familie Khorakiwala übernommen, bewahrte sie ihre handwerklichen Wurzeln und expandierte gleichzeitig nach Indien und Ägypten. Heute betreibt Monginis über 1.500 Filialen in Indien und mehr als 120 in Ägypten, unterstützt von 20 fortschrittlichen Produktionsstätten, einschließlich einer Flaggschiff-Filiale in Bhiwandi. Bekannt für die Einführung von 100% vegetarischen Kuchen, bietet Monginis eine breite Palette von Backwaren mit langer Haltbarkeit — von Keksen und Zwieback bis hin zu Premium-Kuchen und Gebäck.",
+    "viewDetails": "Herstellungsdetails anzeigen"
+  },
+  "why": {
+    "title": "Warum Monginis für Ihren Markt?",
+    "subtitle": "Konsistenz, Qualität und Leidenschaft für die Schaffung von Produkten, die bei jeder Feier ein Lächeln zaubern",
+    "cards": {
+      "legacy": {
+        "title": "Reiches Vermächtnis von über 120 Jahren",
+        "desc": "Über ein Jahrhundert Bäckerei-Exzellenz und vertrauenswürdige Rezepte"
+      },
+      "scale": {
+        "title": "Unübertroffene Größe und Nostalgie",
+        "desc": "Eine Marke, die Generationen und Grenzen überspannt"
+      },
+      "plants": {
+        "title": "20 hochmoderne Werke",
+        "desc": "Moderne Einrichtungen in ganz Indien für Qualitätsproduktion"
+      },
+      "outlets": {
+        "title": "Über 1500 exklusive Filialen",
+        "desc": "Umfangreiche Einzelhandelspräsenz in ganz Indien"
+      },
+      "range": {
+        "title": "Vielfältige Produktpalette",
+        "desc": "Von Keksen bis zu Premium-Kuchen für jeden Anlass"
+      },
+      "trust": {
+        "title": "Preisgekröntes Vertrauen & Qualität",
+        "desc": "Anerkannt für Exzellenz in der Backindustrie"
+      },
+      "quality": {
+        "title": "Robuste Qualitätsinfrastruktur",
+        "desc": "Strenge Qualitätskontrolle bei jedem Schritt"
+      },
+      "certifications": {
+        "title": "Weltweit anerkannte Zertifizierungen",
+        "desc": "FSSAI, FSSC 22000 und HALAL zertifiziert"
+      },
+      "locations": {
+        "title": "Strategische Werkstandorte",
+        "desc": "Optimal gelegen für effiziente Distribution"
+      },
+      "logistics": {
+        "title": "Nahtlose Logistik",
+        "desc": "Zuverlässige Lieferkette für globale Exporte"
+      }
+    }
+  },
+  "quality": {
+    "title": "Qualität & Zertifizierungen",
+    "subtitle": "Unsere Zertifizierungen spiegeln unser Engagement für erstklassige Backwaren wider"
+  },
+  "footer": {
+    "copyright": "© 2025 Monginis. Alle Rechte vorbehalten."
+  }
+}

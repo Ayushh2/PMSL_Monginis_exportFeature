@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "Over Monginis Exports",
+    "products": "Productcategorie",
+    "quality": "Kwaliteit & certificeringen",
+    "inquiry": "Exportaanvraag"
+  },
+  "navContact": {
+    "phone": "+91 9876543210",
+    "email": "exports@monginis.com"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "nl": "Nederlands",
+    "pl": "Polski"
+  },
+  "hero": {
+    "title": "Monginis — Een erfenis van zoete vieringen, nu over grenzen heen",
+    "subtitle": "India's iconische bakkerijmerk met meer dan 120 jaar vertrouwen en innovatie",
+    "tagline": "Wereldwijde glimlachen bakken — Van India naar de wereld",
+    "cta1": "Producten verkennen",
+    "cta2": "Een aanvraag doen"
+  },
+  "inquiry": {
+    "title": "Exportaanvraag",
+    "subtitle": "Breng de smaak van uitmuntendheid naar huis die al generaties lang geliefd is",
+    "name": "Naam",
+    "email": "E-mail",
+    "message": "Bericht",
+    "submit": "Verzenden",
+    "success": "Bedankt! We nemen binnenkort contact met u op.",
+    "error": "Er is iets misgegaan. Probeer het opnieuw."
+  },
+  "products": {
+    "title": "Productpresentatie",
+    "subtitle": "Ontdek ons brede scala aan heerlijke bakkerijproducten, met liefde gemaakt om zoetheid te brengen bij elke viering",
+    "cookies": "Koekjes",
+    "khari": "Khari",
+    "biscuit": "Beschuit",
+    "muffin": "Muffin",
+    "downloadSpec": "Specificatieblad downloaden"
+  },
+  "about": {
+    "title": "Uitmuntendheid gebakken door innovatie",
+    "description": "Monginis begon begin 1900 in Mumbai als een charmante bakkerij opgericht door twee Italiaanse broers. Overgenomen door de Khorakiwala-familie in 1956, behield het zijn ambachtelijke wortels terwijl het uitbreidde in India en Egypte. Vandaag exploiteert Monginis meer dan 1.500 winkels in India en meer dan 120 in Egypte, ondersteund door 20 geavanceerde productiefaciliteiten, waaronder een vlaggenschip in Bhiwandi. Bekend om de introductie van 100% vegetarische taarten, biedt Monginis een breed scala aan lang houdbare bakkerijproducten — van koekjes en beschuit tot premium taarten en gebak.",
+    "viewDetails": "Bekijk productiedetails"
+  },
+  "why": {
+    "title": "Waarom Monginis voor uw markt?",
+    "subtitle": "Consistentie, kwaliteit en passie voor het creëren van producten die glimlachen brengen bij elke viering",
+    "cards": {
+      "legacy": {
+        "title": "Rijk erfgoed van meer dan 120 jaar",
+        "desc": "Meer dan een eeuw bakkerij-uitmuntendheid en vertrouwde recepten"
+      },
+      "scale": {
+        "title": "Ongeëvenaarde schaal en nostalgie",
+        "desc": "Een merk dat generaties en grenzen overspant"
+      },
+      "plants": {
+        "title": "20 state-of-the-art fabrieken",
+        "desc": "Moderne faciliteiten in heel India die kwaliteitsproductie garanderen"
+      },
+      "outlets": {
+        "title": "Meer dan 1500 exclusieve winkels",
+        "desc": "Uitgebreide retail-aanwezigheid in heel India"
+      },
+      "range": {
+        "title": "Divers productassortiment",
+        "desc": "Van koekjes tot premium taarten voor elke gelegenheid"
+      },
+      "trust": {
+        "title": "Bekroond vertrouwen & kwaliteit",
+        "desc": "Erkend voor uitmuntendheid in de bakkerij-industrie"
+      },
+      "quality": {
+        "title": "Robuuste kwaliteitsinfrastructuur",
+        "desc": "Strenge kwaliteitscontrole bij elke stap"
+      },
+      "certifications": {
+        "title": "Wereldwijd erkende certificeringen",
+        "desc": "FSSAI, FSSC 22000 en HALAL gecertificeerd"
+      },
+      "locations": {
+        "title": "Strategische fabriekslocaties",
+        "desc": "Optimaal gelegen voor efficiënte distributie"
+      },
+      "logistics": {
+        "title": "Naadloze logistiek",
+        "desc": "Betrouwbare toeleveringsketen voor wereldwijde export"
+      }
+    }
+  },
+  "quality": {
+    "title": "Kwaliteit & certificeringen",
+    "subtitle": "Onze certificeringen weerspiegelen onze toewijding aan het leveren van bakkerijproducten van wereldklasse"
+  },
+  "footer": {
+    "copyright": "© 2025 Monginis. Alle rechten voorbehouden."
+  }
+}

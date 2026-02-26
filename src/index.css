@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* ✅ prevents any horizontal overflow */
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden; /* ✅ prevents mobile side-gap caused by wide nav/animations */
+}
+
+/* ✅ root wrapper safety (very common cause of right-side gap) */
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Safer defaults for mobile */
+*, *::before, *::after { box-sizing: border-box; }
+img, svg, video, canvas { max-width: 100%; height: auto; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E91E8C;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6BB5;
+}

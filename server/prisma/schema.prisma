@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Inquiry {
+  id              Int      @id @default(autoincrement())
+  name            String
+  email           String
+  phone           String   @default("")
+  inform          String   @default("exporter")
+  country         String   @default("")
+  message         String
+  businessDetails String   @default("")
+  language        String   @default("en")
+  createdAt       DateTime @default(now())
+}
+
+model BrochureLead {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  phone     String
+  language  String   @default("en")
+  createdAt DateTime @default(now())
+}

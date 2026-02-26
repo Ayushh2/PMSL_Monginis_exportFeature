@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "Acerca de Monginis Exports",
+    "products": "Categoría de productos",
+    "quality": "Calidad y certificaciones",
+    "inquiry": "Consulta de exportación"
+  },
+  "navContact": {
+    "phone": "+91 9876543210",
+    "email": "exports@monginis.com"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "nl": "Nederlands",
+    "pl": "Polski"
+  },
+  "hero": {
+    "title": "Monginis — Un legado de celebraciones dulces, ahora más allá de las fronteras",
+    "subtitle": "La marca de panadería icónica de la India con más de 120 años de confianza e innovación",
+    "tagline": "Horneando sonrisas globales — De la India al mundo",
+    "cta1": "Explorar productos",
+    "cta2": "Hacer una consulta"
+  },
+  "inquiry": {
+    "title": "Consulta de exportación",
+    "subtitle": "Lleve a casa el sabor de la excelencia que ha sido amado por generaciones",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "submit": "Enviar",
+    "success": "¡Gracias! Nos pondremos en contacto con usted pronto.",
+    "error": "Algo salió mal. Por favor, inténtelo de nuevo."
+  },
+  "products": {
+    "title": "Presentación de productos",
+    "subtitle": "Explore nuestra amplia gama de deliciosos productos de panadería, elaborados con amor para traer dulzura a cada celebración",
+    "cookies": "Galletas",
+    "khari": "Khari",
+    "biscuit": "Bizcocho",
+    "muffin": "Magdalena",
+    "downloadSpec": "Descargar hoja de especificaciones"
+  },
+  "about": {
+    "title": "Excelencia horneada por la innovación",
+    "description": "Monginis comenzó a principios de 1900 en Mumbai como una encantadora panadería fundada por dos hermanos italianos. Adquirida por la familia Khorakiwala en 1956, conservó sus raíces artesanales mientras se expandía por India y Egipto. Hoy, Monginis opera más de 1.500 tiendas en India y más de 120 en Egipto, respaldadas por 20 instalaciones de fabricación avanzadas, incluyendo una insignia en Bhiwandi. Conocido por introducir pasteles 100% vegetarianos, Monginis ofrece una amplia gama de productos horneados de larga duración, desde galletas y pan tostado hasta pasteles y pasteles premium.",
+    "viewDetails": "Ver detalles de fabricación"
+  },
+  "why": {
+    "title": "¿Por qué Monginis para su mercado?",
+    "subtitle": "Consistencia, calidad y pasión por crear productos que traen sonrisas a cada celebración",
+    "cards": {
+      "legacy": {
+        "title": "Rico legado de más de 120 años",
+        "desc": "Más de un siglo de excelencia en panadería y recetas de confianza"
+      },
+      "scale": {
+        "title": "Escala y nostalgia inigualables",
+        "desc": "Una marca que abarca generaciones y fronteras"
+      },
+      "plants": {
+        "title": "20 plantas de última generación",
+        "desc": "Instalaciones modernas en toda India que garantizan producción de calidad"
+      },
+      "outlets": {
+        "title": "Más de 1500 tiendas exclusivas",
+        "desc": "Amplia presencia minorista en toda India"
+      },
+      "range": {
+        "title": "Gama de productos diversa",
+        "desc": "Desde galletas hasta pasteles premium para cada ocasión"
+      },
+      "trust": {
+        "title": "Confianza y calidad galardonadas",
+        "desc": "Reconocido por la excelencia en la industria de la panadería"
+      },
+      "quality": {
+        "title": "Infraestructura de calidad robusta",
+        "desc": "Control de calidad estricto en cada paso"
+      },
+      "certifications": {
+        "title": "Certificaciones reconocidas mundialmente",
+        "desc": "Certificado FSSAI, FSSC 22000 y HALAL"
+      },
+      "locations": {
+        "title": "Ubicaciones estratégicas de plantas",
+        "desc": "Óptimamente ubicadas para distribución eficiente"
+      },
+      "logistics": {
+        "title": "Logística perfecta",
+        "desc": "Cadena de suministro confiable para exportaciones globales"
+      }
+    }
+  },
+  "quality": {
+    "title": "Calidad y certificaciones",
+    "subtitle": "Nuestras certificaciones reflejan nuestro compromiso de entregar productos de panadería de clase mundial"
+  },
+  "footer": {
+    "copyright": "© 2025 Monginis. Todos los derechos reservados."
+  }
+}

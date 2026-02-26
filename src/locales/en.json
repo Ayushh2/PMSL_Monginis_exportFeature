@@ -1,0 +1,212 @@
+{
+  "nav": {
+    "about": "About Monginis Exports",
+    "products": "Product Category",
+    "quality": "Quality & Certifications",
+    "inquiry": "Export Inquiry",
+    "downloadBrochure": "Brochure",
+    "productsLine1": "Product",
+    "productsLine2": "Category",
+    "qualityLine1": "Quality &",
+    "qualityLine2": "Certificates"
+  },
+  "navContact": {
+    "phone": "+91 9876543210",
+    "email": "exports@monginis.com"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "hero": {
+  "badge": "Magic in Every Bite",
+  "headline": "A Legacy of Sweet Celebrations, Now Across Borders",
+  "subheadingPrefix": "India's Iconic Bakery Brand with",
+  "subheadingHighlight": "120+ Years",
+  "subheadingSuffix": "of Trust and Innovation",
+  "trust1": "500+ Products",
+  "trust2": "Loved by Millions",
+  "cta1": "Explore Products",
+  "cta2": "Make an Inquiry",
+  "newBadge": "NEW",
+  "reviews": "(2.5k+ reviews)",
+  "products": {
+    "sliceCakeChocolate": { "name": "Chocolate Slice Cake", "tag": "Best Seller" },
+    "surtiMakhaniya": { "name": "Surti Makhaniya", "tag": "Premium" },
+    "chocoBarCake": { "name": "Choco Bar Cake", "tag": "New Launch" },
+    "tiffinCake": { "name": "Tiffin Cake", "tag": "Classic" },
+    "almondDundeeCake": { "name": "Almond Dundee Cake", "tag": "Signature" }
+  }
+},
+  "inquiry": {
+    "title": "Export Inquiry",
+    "subtitle": "Bring Home the Taste of Excellence That Has Been Loved for Generations",
+    "name": "Name",
+    "email": "Email",
+    "inform": "Inform",
+    "informOptions": {
+      "exporter": "Exporter",
+      "retailer": "Retailer",
+      "trader": "Trader"
+    },
+    "country": "Country",
+    "message": "Message",
+    "businessDetails": "Tell us about your existing business",
+    "submit": "Submit",
+    "success": "Thank you! We'll get back to you shortly.",
+    "error": "Something went wrong. Please try again.",
+    "phone": "Phone Number"
+  },
+  "products": {
+  "title": "Product Showcase",
+  "subtitle": "Explore our core product categories designed for international markets. For detailed specifications, packaging formats, and the complete product portfolio, please refer to our official brochure.",
+  "cookies": "Cookies",
+  "savoury_biscuit": "Savoury Biscuit",
+  "swiss_roll": "Swiss Roll",
+  "special_cake_range": "Special Cake Range",
+  "brochureBlurb": "Looking for detailed product specifications, packaging formats, and complete SKU listings? Access our official brochure for the full export portfolio.",
+  "downloadBrochure": "View Brochure Details"
+},
+  "about": {
+    "title": "Excellence Baked by Innovation",
+    "description": "Monginis began in early 1900s Mumbai as a charming bakery founded by two Italian brothers. Acquired by the Khorakiwala family in 1956, it retained its artisanal roots while expanding across India and Egypt. Today, Monginis operates over 1,500 outlets in India and 120+ in Egypt, supported by 20 advanced manufacturing facilities, including a flagship in Bhiwandi. Known for introducing 100% vegetarian cakes, Monginis offers a wide range of long shelf-life baked goods — from cookies and rusks to premium cakes and pastries.",
+    "viewDetails": "View Manufacturing Details"
+  },
+  "why": {
+    "title": "Why Monginis for Your Market?",
+    "subtitle": "Consistency, Quality, and a Passion for Creating Products That Bring Smiles to Every Celebration",
+    "cards": {
+      "legacy": {
+        "title": "Rich Legacy of 120+ Years",
+        "desc": "Over a century of baking excellence and trusted recipes"
+      },
+      "scale": {
+        "title": "Unmatched Scale and Nostalgia",
+        "desc": "A brand that spans generations and borders"
+      },
+      "plants": {
+        "title": "20 State-of-the-Art Plants",
+        "desc": "Modern facilities across India ensuring quality production"
+      },
+      "outlets": {
+        "title": "1500+ Exclusive Outlets",
+        "desc": "Extensive retail presence across India"
+      },
+      "range": {
+        "title": "Diverse Product Range",
+        "desc": "From cookies to premium cakes for every occasion"
+      },
+      "trust": {
+        "title": "Award-Worthy Trust & Quality",
+        "desc": "Recognized for excellence in the bakery industry"
+      },
+      "quality": {
+        "title": "Robust Quality Infrastructure",
+        "desc": "Stringent quality control at every step"
+      },
+      "certifications": {
+        "title": "Globally Recognized Certifications",
+        "desc": "FSSAI, FSSC 22000, and HALAL certified"
+      },
+      "locations": {
+        "title": "Strategic Plant Locations",
+        "desc": "Optimally located for efficient distribution"
+      },
+      "logistics": {
+        "title": "Seamless Logistics",
+        "desc": "Reliable supply chain for global exports"
+      }
+    }
+  },
+  "quality": {
+    "title": "Quality & Certifications",
+    "subtitle": "Our Certifications Reflect Our Commitment to Delivering World-Class Bakery Products"
+  },
+  "footer": {
+    "copyright": "© 2025 Monginis. All Rights Reserved."
+  },
+  "brochure": {
+  "title": "Get the Brochure",
+  "subtitle": "Share your details to access the official export brochure.",
+  "name": "Name",
+  "email": "Email",
+  "phone": "Phone Number",
+  "downloadButton": "Download Brochure",
+  "cancel": "Cancel",
+  "submit": "Get Brochure",
+  "submitting": "Submitting…",
+  "formError": "Please enter your name, email, and phone number.",
+  "note": "We’ll contact you only if needed for export support.",
+  "badge": "Monginis Export",
+  "companyBrochure": "Company Brochure",
+
+  "description": "The brochure provides structured product insights, packaging formats, compliance certifications, and manufacturing capabilities to support your market evaluation. It includes complete SKU listings, packaging configurations, and an overview of our export partnership framework.",
+
+  "highlightsTitle": "What you’ll get",
+  "highlights": [
+    "Complete product catalogue & formats",
+    "Packaging configurations & shelf-life overview",
+    "Quality standards & export certifications"
+  ],
+
+  "stepsTitle": "Quick steps",
+  "steps": [
+    "Enter your details",
+    "Click “Get Brochure”",
+    "Your download starts instantly"
+  ],
+
+  "optional": "(optional)",
+  "countryCode": "Country Code",
+  "country": "Country",
+
+  "sectionTitle": "Access Our Complete Product Portfolio",
+  "sectionSubtitle": "Download the official export brochure designed for distributors and import partners. Includes full product catalogue, packaging options, certifications, and manufacturing capabilities.",
+
+  "whatYouGetTitle": "What you’ll get",
+  "whatYouGetItems": [
+    "Product categories + export-ready portfolio",
+    "Packaging formats & shelf-life overview",
+    "Certifications & compliance summary"
+  ],
+
+  "usefulForTitle": "Useful for",
+  "usefulForItems": [
+    "Distributors & importers evaluating product fit",
+    "Purchase teams comparing catalogues",
+    "Internal review, sharing & approvals"
+  ],
+
+  "modalTitle": "Get the brochure",
+  "modalSubtitle": "Share your details to download the brochure.",
+  "inThisBrochureTitle": "In this brochure:",
+  "inThisBrochureItems": [
+    "Export-ready product highlights",
+    "Certifications & compliance summary",
+    "Packaging & shelf-life guidance",
+    "Simple partnership steps"
+  ],
+
+  "placeholderName": "Your Name",
+  "placeholderEmail": "Business Email",
+  "placeholderPhone": "Phone Number",
+  "placeholderCountryCode": "Country Code",
+  "placeholderCountry": "Country",
+
+  "downloadCta": "Get Brochure",
+  "downloading": "Submitting…",
+  "success": "Thank you! Your download should start now.",
+  "errorGeneric": "Something went wrong. Please try again.",
+  "phoneInvalid": "Please enter a valid phone number.",
+  "nameRequired": "Please enter your name.",
+  "emailRequired": "Please enter a valid email address.",
+  "popupTitle": "Get the Brochure",
+  "popupSubtitle": "Share your details to access the brochure instantly.",
+  "close": "Close",
+  "placeholderPhoneNumber": "10-digit number",
+  "download": "Download",
+  "noSpam": "We use this only to support export inquiries. No spam.",
+  "phoneValidation": "Phone number must be exactly 10 digits."
+}
+}

@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "about": "Informazioni su Monginis Exports",
+    "products": "Categoria prodotti",
+    "quality": "Qualità e certificazioni",
+    "inquiry": "Richiesta di esportazione"
+  },
+  "navContact": {
+    "phone": "+91 9876543210",
+    "email": "exports@monginis.com"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "de": "Deutsch",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "nl": "Nederlands",
+    "pl": "Polski"
+  },
+  "hero": {
+    "title": "Monginis — Un'eredità di dolci celebrazioni, ora oltre i confini",
+    "subtitle": "Il marchio di panetteria iconico dell'India con oltre 120 anni di fiducia e innovazione",
+    "tagline": "Cuocendo sorrisi globali — Dall'India al mondo",
+    "cta1": "Esplora prodotti",
+    "cta2": "Fai una richiesta"
+  },
+  "inquiry": {
+    "title": "Richiesta di esportazione",
+    "subtitle": "Porta a casa il gusto dell'eccellenza amato da generazioni",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "submit": "Invia",
+    "success": "Grazie! Ti ricontatteremo a breve.",
+    "error": "Qualcosa è andato storto. Riprova."
+  },
+  "products": {
+    "title": "Presentazione prodotti",
+    "subtitle": "Scopri la nostra vasta gamma di deliziosi prodotti da forno, realizzati con amore per portare dolcezza a ogni celebrazione",
+    "cookies": "Biscotti",
+    "khari": "Khari",
+    "biscuit": "Biscotto",
+    "muffin": "Muffin",
+    "downloadSpec": "Scarica scheda tecnica"
+  },
+  "about": {
+    "title": "Eccellenza cotta dall'innovazione",
+    "description": "Monginis è iniziata all'inizio del 1900 a Mumbai come un'incantevole panetteria fondata da due fratelli italiani. Acquisita dalla famiglia Khorakiwala nel 1956, ha mantenuto le sue radici artigianali espandendosi in India ed Egitto. Oggi Monginis gestisce oltre 1.500 punti vendita in India e più di 120 in Egitto, supportati da 20 impianti di produzione avanzati, incluso uno flagship a Bhiwandi. Noto per aver introdotto torte 100% vegetariane, Monginis offre una vasta gamma di prodotti da forno a lunga conservazione — dai biscotti e fette biscottate alle torte e pasticcini premium.",
+    "viewDetails": "Visualizza dettagli di produzione"
+  },
+  "why": {
+    "title": "Perché Monginis per il tuo mercato?",
+    "subtitle": "Coerenza, qualità e passione per creare prodotti che portano sorrisi a ogni celebrazione",
+    "cards": {
+      "legacy": {
+        "title": "Ricca eredità di oltre 120 anni",
+        "desc": "Oltre un secolo di eccellenza nella panetteria e ricette affidabili"
+      },
+      "scale": {
+        "title": "Scala e nostalgia senza pari",
+        "desc": "Un marchio che attraversa generazioni e confini"
+      },
+      "plants": {
+        "title": "20 stabilimenti all'avanguardia",
+        "desc": "Strutture moderne in tutta l'India che garantiscono produzione di qualità"
+      },
+      "outlets": {
+        "title": "Oltre 1500 punti vendita esclusivi",
+        "desc": "Ampia presenza retail in tutta l'India"
+      },
+      "range": {
+        "title": "Gamma di prodotti diversificata",
+        "desc": "Dai biscotti alle torte premium per ogni occasione"
+      },
+      "trust": {
+        "title": "Fiducia e qualità premiate",
+        "desc": "Riconosciuto per l'eccellenza nel settore della panetteria"
+      },
+      "quality": {
+        "title": "Infrastruttura di qualità robusta",
+        "desc": "Controllo qualità rigoroso a ogni passo"
+      },
+      "certifications": {
+        "title": "Certificazioni riconosciute a livello globale",
+        "desc": "Certificato FSSAI, FSSC 22000 e HALAL"
+      },
+      "locations": {
+        "title": "Posizioni strategiche degli stabilimenti",
+        "desc": "Ottimamente posizionati per distribuzione efficiente"
+      },
+      "logistics": {
+        "title": "Logistica senza soluzione di continuità",
+        "desc": "Catena di approvvigionamento affidabile per esportazioni globali"
+      }
+    }
+  },
+  "quality": {
+    "title": "Qualità e certificazioni",
+    "subtitle": "Le nostre certificazioni riflettono il nostro impegno nel fornire prodotti da forno di classe mondiale"
+  },
+  "footer": {
+    "copyright": "© 2025 Monginis. Tutti i diritti riservati."
+  }
+}
