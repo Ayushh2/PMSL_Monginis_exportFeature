@@ -146,36 +146,10 @@ export function ProductShowcase() {
           gap: 0.875rem;
           margin-bottom: 0.875rem;
         }
-        .modal-last-row {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 0.875rem;
-          margin-bottom: 0;
-        }
-        .modal-last-row-inner {
-          grid-column: 1 / -1;
-          display: flex;
-          justify-content: center;
-          gap: 0.875rem;
-        }
-        .modal-last-row-inner > div {
-          width: calc(33.333% - 0.292rem);
-          flex-shrink: 0;
-        }
 
         @media (max-width: 520px) {
           .modal-grid-row {
             grid-template-columns: 1fr !important;
-          }
-          .modal-last-row {
-            grid-template-columns: 1fr !important;
-          }
-          .modal-last-row-inner {
-            flex-direction: column;
-            width: 100%;
-          }
-          .modal-last-row-inner > div {
-            width: 100% !important;
           }
         }
       `}</style>
@@ -281,15 +255,11 @@ export function ProductShowcase() {
               {row3.map((product, i) => <ProductCard key={product.id} product={product} index={i + 6} />)}
             </div>
 
-            {/* Row 4 — 2 products centered, same size as others */}
-            <div className="modal-last-row">
-              <div className="modal-last-row-inner">
-                {row4.map((product, i) => (
-                  <div key={product.id}>
-                    <ProductCard product={product} index={i + 9} />
-                  </div>
-                ))}
-              </div>
+            {/* Row 4 — 2 products left aligned */}
+            <div className="modal-grid-row" style={{ marginBottom: 0 }}>
+              {row4.map((product, i) => (
+                <ProductCard key={product.id} product={product} index={i + 9} />
+              ))}
             </div>
 
             {/* Modal Footer */}
