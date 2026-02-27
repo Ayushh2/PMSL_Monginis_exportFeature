@@ -37,10 +37,7 @@ export function Footer() {
               </div>
 
               <p className="text-sm text-white/75 leading-relaxed max-w-sm">
-                {t(
-                  "footer.tagline",
-                  "Export-ready bakery products with consistent quality, trusted processes, and reliable packaging for global B2B partners."
-                )}
+                {t("footer.tagline")}
               </p>
 
               {/* Social */}
@@ -80,47 +77,32 @@ export function Footer() {
             {/* Quick Links (our website sections) */}
             <div>
               <h4 className="text-sm font-semibold tracking-wide text-white/90 mb-4">
-                {t("footer.quickLinks", "Quick Links")}
+                {t("footer.quickLinks")}
               </h4>
               <ul className="space-y-2 text-sm text-white/75">
                 <li>
-                  <button
-                    onClick={() => scrollToSection("about")}
-                    className="hover:text-white transition-colors"
-                  >
-                    {t("nav.about", "About")}
+                  <button onClick={() => scrollToSection("about")} className="hover:text-white transition-colors">
+                    {t("nav.about")}
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("products")}
-                    className="hover:text-white transition-colors"
-                  >
-                    {t("nav.products", "Product Category")}
+                  <button onClick={() => scrollToSection("products")} className="hover:text-white transition-colors">
+                    {t("nav.products")}
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("quality")}
-                    className="hover:text-white transition-colors"
-                  >
-                    {t("nav.quality", "Quality & Certifications")}
+                  <button onClick={() => scrollToSection("quality")} className="hover:text-white transition-colors">
+                    {t("nav.quality")}
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("brochure")}
-                    className="hover:text-white transition-colors"
-                  >
-                    {t("nav.brochure", "Brochure")}
+                  <button onClick={() => scrollToSection("brochure")} className="hover:text-white transition-colors">
+                    {t("nav.downloadBrochure")}
                   </button>
                 </li>
                 <li>
-                  <button
-                    onClick={() => scrollToSection("inquiry-bottom")}
-                    className="hover:text-white transition-colors"
-                  >
-                    {t("nav.inquiry", "Inquiry")}
+                  <button onClick={() => scrollToSection("inquiry-bottom")} className="hover:text-white transition-colors">
+                    {t("nav.inquiry")}
                   </button>
                 </li>
               </ul>
@@ -129,24 +111,24 @@ export function Footer() {
             {/* Highlights */}
             <div>
               <h4 className="text-sm font-semibold tracking-wide text-white/90 mb-4">
-                {t("footer.highlights", "Highlights")}
+                {t("footer.highlights")}
               </h4>
               <ul className="space-y-2 text-sm text-white/75">
                 <li className="flex items-start gap-2">
                   <span className="mt-2 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />
-                  <span>{t("footer.h1", "Export-ready product range")}</span>
+                  <span>{t("footer.h1")}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-2 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />
-                  <span>{t("footer.h2", "Consistent quality standards")}</span>
+                  <span>{t("footer.h2")}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-2 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />
-                  <span>{t("footer.h3", "Packaging & logistics support")}</span>
+                  <span>{t("footer.h3")}</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="mt-2 h-2 w-2 rounded-full bg-[#E91E8C] flex-shrink-0" />
-                  <span>{t("footer.h4", "Fast inquiry & quotation process")}</span>
+                  <span>{t("footer.h4")}</span>
                 </li>
               </ul>
             </div>
@@ -154,24 +136,18 @@ export function Footer() {
             {/* Contact */}
             <div>
               <h4 className="text-sm font-semibold tracking-wide text-white/90 mb-4">
-                {t("footer.contact", "Contact")}
+                {t("footer.contact")}
               </h4>
 
               <div className="space-y-3 text-sm text-white/75">
-                <a
-                  href="tel:+919876543210"
-                  className="flex items-center gap-2 hover:text-white transition-colors"
-                >
+                <a href="tel:+919876543210" className="flex items-center gap-2 hover:text-white transition-colors">
                   <svg className="w-4 h-4 text-white/80" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                   <span>+91 9876543210</span>
                 </a>
 
-                <a
-                  href="mailto:exports@monginis.com"
-                  className="flex items-center gap-2 hover:text-white transition-colors"
-                >
+                <a href="mailto:exports@monginis.com" className="flex items-center gap-2 hover:text-white transition-colors">
                   <svg className="w-4 h-4 text-white/80" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -187,7 +163,7 @@ export function Footer() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>{t("footer.location", "Mumbai, Maharashtra, India")}</span>
+                  <span>{t("footer.location")}</span>
                 </div>
               </div>
             </div>
@@ -196,23 +172,23 @@ export function Footer() {
           {/* Divider */}
           <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
             <p className="text-xs text-white/70">
-              {t("footer.copyright", "© 2025 Monginis. All Rights Reserved.")}
+              {t("footer.copyright")}
             </p>
 
             <div className="flex items-center gap-3 text-xs text-white/70">
               <span className="inline-flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-[#E91E8C]" />
-                {t("footer.trust1", "Secure communication")}
+                {t("footer.trust1")}
               </span>
               <span className="text-white/25">•</span>
               <span className="inline-flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-[#E91E8C]" />
-                {t("footer.trust2", "Export inquiry support")}
+                {t("footer.trust2")}
               </span>
               <span className="text-white/25">•</span>
               <span className="inline-flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-[#E91E8C]" />
-                {t("footer.trust3", "Quality-first process")}
+                {t("footer.trust3")}
               </span>
             </div>
           </div>

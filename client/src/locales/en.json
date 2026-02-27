@@ -162,8 +162,20 @@
   "facility4": "R&D Center"
 },
   "footer": {
-    "copyright": "© 2025 Monginis. All Rights Reserved."
-  },
+  "tagline": "Export-ready bakery products with consistent quality, trusted processes, and reliable packaging for global B2B partners.",
+  "quickLinks": "Quick Links",
+  "highlights": "Highlights",
+  "contact": "Contact",
+  "h1": "Export-ready product range",
+  "h2": "Consistent quality standards",
+  "h3": "Packaging & logistics support",
+  "h4": "Fast inquiry & quotation process",
+  "location": "Mumbai, Maharashtra, India",
+  "copyright": "© 2025 Monginis. All Rights Reserved.",
+  "trust1": "Secure communication",
+  "trust2": "Export inquiry support",
+  "trust3": "Quality-first process"
+},
   "brochure": {
   "title": "Get the Brochure",
   "subtitle": "Share your details to access the official export brochure.",

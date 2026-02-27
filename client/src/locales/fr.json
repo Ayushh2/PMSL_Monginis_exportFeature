@@ -162,8 +162,20 @@
   "facility4": "Centre R&D"
 },
   "footer": {
-    "copyright": "© 2025 Monginis. Tous droits réservés."
-  },
+  "tagline": "Des produits de boulangerie prêts à l’exportation avec une qualité constante, des processus fiables et un emballage adapté pour les partenaires B2B à l’international.",
+  "quickLinks": "Liens rapides",
+  "highlights": "Points forts",
+  "contact": "Contact",
+  "h1": "Gamme de produits prête à l’export",
+  "h2": "Normes de qualité constantes",
+  "h3": "Support emballage & logistique",
+  "h4": "Processus de demande & devis rapide",
+  "location": "Mumbai, Maharashtra, Inde",
+  "copyright": "© 2025 Monginis. Tous droits réservés.",
+  "trust1": "Communication sécurisée",
+  "trust2": "Assistance aux demandes d’export",
+  "trust3": "Processus axé sur la qualité"
+},
   "brochure": {
   "title": "Obtenir la brochure",
   "subtitle": "Renseignez vos informations pour accéder à la brochure export officielle.",
