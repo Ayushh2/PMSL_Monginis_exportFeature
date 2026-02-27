@@ -32,23 +32,17 @@ export function ProductShowcase() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.1 }
     );
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
     document.body.style.overflow = showModal ? 'hidden' : '';
-    return () => {
-      document.body.style.overflow = '';
-    };
+    return () => { document.body.style.overflow = ''; };
   }, [showModal]);
 
   const scrollToBrochure = () => {
@@ -59,9 +53,73 @@ export function ProductShowcase() {
     }, 150);
   };
 
+  const row1 = allProducts.slice(0, 3);
+  const row2 = allProducts.slice(3, 6);
+  const row3 = allProducts.slice(6, 9);
+  const row4 = allProducts.slice(9, 11);
+
+  const ProductCard = ({ product, index }: { product: typeof allProducts[0]; index: number }) => (
+    <div
+      className="pc-card"
+      style={{
+        background: '#fff',
+        borderRadius: '1rem',
+        overflow: 'hidden',
+        border: '1px solid #fce7f3',
+        boxShadow: '0 3px 12px rgba(200,60,100,0.07)',
+        animation: `cardPop 0.35s ease ${index * 0.04}s both`,
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+      }}
+    >
+      <div style={{
+        background: '#FFF0F5',
+        height: '160px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '1rem',
+        overflow: 'hidden',
+        flexShrink: 0,
+      }}>
+        <img
+          className="pc-img"
+          src={product.image}
+          alt={t(`products.${product.key}`)}
+          style={{
+            maxHeight: '140px',
+            maxWidth: '100%',
+            objectFit: 'contain',
+          }}
+        />
+      </div>
+      <div style={{
+        padding: '0.65rem 0.75rem 0.75rem',
+        textAlign: 'center',
+        borderTop: '1px solid #fce7f3',
+        flexGrow: 1,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+        <p style={{
+          margin: 0,
+          fontWeight: 700,
+          fontSize: '0.85rem',
+          color: '#9d174d',
+          lineHeight: 1.3,
+          fontFamily: 'DM Sans, sans-serif',
+        }}>
+          {t(`products.${product.key}`)}
+        </p>
+      </div>
+    </div>
+  );
+
   return (
     <>
-      {/* ── GLOBAL STYLES for hover ── */}
+      {/* ── GLOBAL STYLES ── */}
       <style>{`
         .product-card { transition: transform 0.25s ease, box-shadow 0.25s ease; cursor: default; }
         .product-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(233,30,140,0.14) !important; }
@@ -81,6 +139,45 @@ export function ProductShowcase() {
         .pc-card:hover .pc-img { transform: scale(1.07); }
         .pc-img { transition: transform 0.28s ease; }
         .pc-close:hover { background: #be185d !important; transform: rotate(90deg); }
+
+        .modal-grid-row {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0.875rem;
+          margin-bottom: 0.875rem;
+        }
+        .modal-last-row {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0.875rem;
+          margin-bottom: 0;
+        }
+        .modal-last-row-inner {
+          grid-column: 1 / -1;
+          display: flex;
+          justify-content: center;
+          gap: 0.875rem;
+        }
+        .modal-last-row-inner > div {
+          width: calc(33.333% - 0.292rem);
+          flex-shrink: 0;
+        }
+
+        @media (max-width: 520px) {
+          .modal-grid-row {
+            grid-template-columns: 1fr !important;
+          }
+          .modal-last-row {
+            grid-template-columns: 1fr !important;
+          }
+          .modal-last-row-inner {
+            flex-direction: column;
+            width: 100%;
+          }
+          .modal-last-row-inner > div {
+            width: 100% !important;
+          }
+        }
       `}</style>
 
       {/* ── MODAL ── */}
@@ -99,18 +196,17 @@ export function ProductShowcase() {
             padding: '1rem',
           }}
         >
-          {/* Modal Box */}
           <div
             onClick={(e) => e.stopPropagation()}
             style={{
               background: 'linear-gradient(160deg, #fff0f6 0%, #fff8fc 100%)',
               borderRadius: '1.5rem',
               width: '100%',
-              maxWidth: '960px',
+              maxWidth: '860px',
               maxHeight: '88vh',
               overflowY: 'auto',
               boxShadow: '0 28px 70px rgba(180,30,80,0.25), 0 0 0 1px #fce7f3',
-              padding: '2.25rem 2rem 2rem',
+              padding: '2.25rem 1.75rem 2rem',
               position: 'relative',
               animation: 'modalIn 0.32s cubic-bezier(0.34,1.5,0.64,1) both',
             }}
@@ -137,170 +233,109 @@ export function ProductShowcase() {
                 boxShadow: '0 3px 10px rgba(233,30,140,0.4)',
                 transition: 'background 0.2s, transform 0.3s',
               }}
-            >
-              ✕
-            </button>
+            >✕</button>
 
             {/* Modal Header */}
             <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
-              <span
-                style={{
-                  display: 'inline-block',
-                  background: '#fce7f3',
-                  color: '#E91E8C',
-                  fontSize: '0.7rem',
-                  fontWeight: 700,
-                  letterSpacing: '0.18em',
-                  textTransform: 'uppercase',
-                  padding: '0.28rem 1rem',
-                  borderRadius: '999px',
-                  border: '1px solid #fbcfe8',
-                  marginBottom: '0.65rem',
-                }}
-              >
+              <span style={{
+                display: 'inline-block',
+                background: '#fce7f3',
+                color: '#E91E8C',
+                fontSize: '0.7rem',
+                fontWeight: 700,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                padding: '0.28rem 1rem',
+                borderRadius: '999px',
+                border: '1px solid #fbcfe8',
+                marginBottom: '0.65rem',
+              }}>
                 {t('products.fullRange')}
               </span>
-
-              <h2
-                style={{
-                  margin: '0 0 0.35rem',
-                  fontSize: 'clamp(1.4rem, 3vw, 2rem)',
-                  fontWeight: 800,
-                  color: '#9d174d',
-                  fontFamily: 'Playfair Display, serif',
-                }}
-              >
+              <h2 style={{
+                margin: '0 0 0.35rem',
+                fontSize: 'clamp(1.4rem, 3vw, 2rem)',
+                fontWeight: 800,
+                color: '#9d174d',
+                fontFamily: 'Playfair Display, serif',
+              }}>
                 {t('products.allCategoriesTitle')}
               </h2>
-
               <p style={{ color: '#b07090', fontSize: '0.85rem', margin: 0, fontFamily: 'DM Sans, sans-serif' }}>
                 {t('products.allCategoriesSubtitle')}
               </p>
             </div>
 
-            {/* Products Grid */}
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(148px, 1fr))',
-                gap: '1rem',
-              }}
-            >
-              {allProducts.map((product, index) => (
-                <div
-                  key={product.id}
-                  className="pc-card"
-                  style={{
-                    background: '#fff',
-                    borderRadius: '1rem',
-                    overflow: 'hidden',
-                    border: '1px solid #fce7f3',
-                    boxShadow: '0 3px 12px rgba(200,60,100,0.07)',
-                    animation: `cardPop 0.35s ease ${index * 0.04}s both`,
-                  }}
-                >
-                  <div
-                    style={{
-                      background: '#FFF0F5',
-                      height: '125px',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      padding: '0.75rem',
-                      overflow: 'hidden',
-                    }}
-                  >
-                    <img
-                      className="pc-img"
-                      src={product.image}
-                      alt={t(`products.${product.key}`)}
-                      style={{
-                        maxHeight: '105px',
-                        maxWidth: '100%',
-                        objectFit: 'contain',
-                      }}
-                    />
-                  </div>
-
-                  <div
-                    style={{
-                      padding: '0.55rem 0.7rem 0.7rem',
-                      textAlign: 'center',
-                      borderTop: '1px solid #fce7f3',
-                    }}
-                  >
-                    <p
-                      style={{
-                        margin: 0,
-                        fontWeight: 700,
-                        fontSize: '0.78rem',
-                        color: '#9d174d',
-                        lineHeight: 1.3,
-                        fontFamily: 'DM Sans, sans-serif',
-                      }}
-                    >
-                      {t(`products.${product.key}`)}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            {/* Row 1 — 3 products */}
+            <div className="modal-grid-row">
+              {row1.map((product, i) => <ProductCard key={product.id} product={product} index={i} />)}
             </div>
 
-            {/* ── Modal Footer ── */}
-            <div
-              style={{
-                marginTop: '2rem',
-                padding: '2rem',
-                borderRadius: '1.25rem',
-                background: 'linear-gradient(135deg, #fff0f6, #fce7f3)',
-                border: '1px solid #fbcfe8',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                textAlign: 'center',
-                gap: '1.25rem',
-              }}
-            >
-              <div
-                style={{
-                  width: '2.5rem',
-                  height: '2.5rem',
-                  borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #E91E8C, #FF6BB5)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  boxShadow: '0 6px 18px rgba(233,30,140,0.3)',
-                  fontSize: '1.1rem',
-                }}
-              >
-                📋
+            {/* Row 2 — 3 products */}
+            <div className="modal-grid-row">
+              {row2.map((product, i) => <ProductCard key={product.id} product={product} index={i + 3} />)}
+            </div>
+
+            {/* Row 3 — 3 products */}
+            <div className="modal-grid-row">
+              {row3.map((product, i) => <ProductCard key={product.id} product={product} index={i + 6} />)}
+            </div>
+
+            {/* Row 4 — 2 products centered, same size as others */}
+            <div className="modal-last-row">
+              <div className="modal-last-row-inner">
+                {row4.map((product, i) => (
+                  <div key={product.id}>
+                    <ProductCard product={product} index={i + 9} />
+                  </div>
+                ))}
               </div>
+            </div>
+
+            {/* Modal Footer */}
+            <div style={{
+              marginTop: '2rem',
+              padding: '2rem',
+              borderRadius: '1.25rem',
+              background: 'linear-gradient(135deg, #fff0f6, #fce7f3)',
+              border: '1px solid #fbcfe8',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              textAlign: 'center',
+              gap: '1.25rem',
+            }}>
+              <div style={{
+                width: '2.5rem',
+                height: '2.5rem',
+                borderRadius: '50%',
+                background: 'linear-gradient(135deg, #E91E8C, #FF6BB5)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: '0 6px 18px rgba(233,30,140,0.3)',
+                fontSize: '1.1rem',
+              }}>📋</div>
 
               <div>
-                <p
-                  style={{
-                    margin: '0 0 0.4rem',
-                    fontWeight: 800,
-                    fontSize: '1.05rem',
-                    color: '#9d174d',
-                    fontFamily: 'Playfair Display, serif',
-                    letterSpacing: '0.01em',
-                  }}
-                >
+                <p style={{
+                  margin: '0 0 0.4rem',
+                  fontWeight: 800,
+                  fontSize: '1.05rem',
+                  color: '#9d174d',
+                  fontFamily: 'Playfair Display, serif',
+                  letterSpacing: '0.01em',
+                }}>
                   {t('products.modalTitle')}
                 </p>
-
-                <p
-                  style={{
-                    margin: 0,
-                    color: '#b07090',
-                    fontSize: '0.88rem',
-                    fontFamily: 'Cormorant Garamond, serif',
-                    lineHeight: 1.7,
-                    maxWidth: '480px',
-                  }}
-                >
+                <p style={{
+                  margin: 0,
+                  color: '#b07090',
+                  fontSize: '0.88rem',
+                  fontFamily: 'Cormorant Garamond, serif',
+                  lineHeight: 1.7,
+                  maxWidth: '480px',
+                }}>
                   {t('products.brochureBlurb')}
                 </p>
               </div>
@@ -326,9 +361,7 @@ export function ProductShowcase() {
                 <span
                   className="inline-flex items-center justify-center w-5 h-5 rounded-full"
                   style={{ background: 'rgba(255,255,255,0.25)', fontSize: '0.75rem' }}
-                >
-                  ↓
-                </span>
+                >↓</span>
               </button>
             </div>
           </div>
@@ -377,7 +410,6 @@ export function ProductShowcase() {
                     style={{ maxHeight: '200px' }}
                   />
                 </div>
-
                 <div
                   className="flex items-center justify-center px-4 py-3 bg-white border-t border-pink-100"
                   style={{ minHeight: '52px' }}
@@ -393,7 +425,7 @@ export function ProductShowcase() {
             ))}
           </div>
 
-          {/* ── Explore All Categories — centered, premium ── */}
+          {/* ── Explore All Categories ── */}
           <div className="flex flex-col items-center gap-3 mb-12 mt-2">
             <div className="flex items-center gap-2">
               <div style={{ height: '1px', width: '1rem', flexShrink: 0, background: 'linear-gradient(to right, transparent, #f9a8d4)' }} />
@@ -427,9 +459,7 @@ export function ProductShowcase() {
               <span
                 className="inline-flex items-center justify-center w-6 h-6 rounded-full"
                 style={{ background: 'rgba(255,255,255,0.25)', fontSize: '0.85rem' }}
-              >
-                ↗
-              </span>
+              >↗</span>
             </button>
 
             <p className="text-pink-300 tracking-wide" style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '0.82rem' }}>
