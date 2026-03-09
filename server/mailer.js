@@ -124,7 +124,7 @@ Monginis Export Team
       senderName: "Monginis Export Team",
       toEmail: email,
       toName: name,
-      subject: "We received your inquiry",
+      subject: "Thank you for contacting Monginis Exports",
       textContent: customerText,
     });
     console.log("✅ Customer mail sent (Brevo API):", custRes);
