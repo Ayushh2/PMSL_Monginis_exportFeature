@@ -14,6 +14,8 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
   "https://pmsl-monginis-export-feature.vercel.app",
+    "https://export.monginis.net",
+  "https://www.export.monginis.net", 
 ];
 
 // ✅ CORS (fix for Vercel submit)
