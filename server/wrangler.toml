@@ -1,0 +1,9 @@
+name = "monginis-export-api"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+ADMIN_EMAIL = "exports@monginis.net"
+FROM_EMAIL = "exports@monginis.net"
+
+

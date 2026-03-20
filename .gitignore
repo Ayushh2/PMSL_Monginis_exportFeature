@@ -16,8 +16,8 @@ build/
 # Environment Files (VERY IMPORTANT)
 # =========================
 .env
-client/.env
 server/.env
+server/.dev.vars
 
 # =========================
 # Logs
@@ -38,3 +38,8 @@ Thumbs.db
 # =========================
 .vercel
 .render
+
+# =========================
+# Wrangler
+# =========================
+.wrangler/
