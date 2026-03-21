@@ -255,7 +255,7 @@ export function DownloadBrochure() {
 
                   {/* Email */}
                   <div>
-                    <label className={labelClass}>{t("brochure.placeholderEmail")}</label>
+                    <label className={labelClass}>{t("brochure.email")}</label>
                     <input
                       type="email"
                       placeholder={t("brochure.placeholderEmail")}
@@ -284,7 +284,7 @@ export function DownloadBrochure() {
 
                   {/* Phone with compact code selector */}
                   <div>
-                    <label className={labelClass}>{t("brochure.placeholderPhoneNumber")}</label>
+                    <label className={labelClass}>{t("brochure.phone")}</label>
                     <div className="flex gap-2 items-start">
                       <div className="flex flex-col" style={{ minWidth: "80px", maxWidth: "80px" }}>
                         <select

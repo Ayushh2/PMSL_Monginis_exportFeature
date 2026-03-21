@@ -70,7 +70,7 @@ export function Hero() {
   const currentProduct = products[currentIndex];
 
   return (
-    <section className="relative w-full min-h-[700px] lg:min-h-[750px] overflow-hidden font-sans bg-gradient-to-br from-[#FFF5F7] via-[#FFE8F0] to-[#FFD6E8]">
+    <section className="relative w-full overflow-hidden font-sans bg-gradient-to-br from-[#FFF5F7] via-[#FFE8F0] to-[#FFD6E8]">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-80 h-80 bg-[#E91E8C] opacity-10 rounded-full blur-3xl animate-pulse" />
@@ -80,7 +80,7 @@ export function Hero() {
         />
         <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-[#F472B6] opacity-10 rounded-full blur-3xl" />
 
-        {/* Floating Icons */}
+        {/* Floating Icons — all screens */}
         {[...Array(6)].map((_, i) => (
           <div
             key={i}
@@ -103,27 +103,29 @@ export function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[600px]">
-          {/* LEFT SIDE - Static Content */}
-          <div className="space-y-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
-            {/* Sparkle Badge — mt-4 added for mobile breathing room from navbar */}
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/90 backdrop-blur-sm border border-[#E91E8C]/20 shadow-lg mt-4 sm:mt-6 lg:mt-0">
-              <Sparkles className="w-5 h-5 text-[#E91E8C]" />
-              <span className="text-sm font-bold text-[#E91E8C] tracking-wide">
-                {t("hero.badge")}
-              </span>
+          {/* LEFT SIDE */}
+          <div className="flex flex-col gap-5">
+
+            {/* Badge — left aligned like reference image */}
+            <div className="flex">
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/90 backdrop-blur-sm border border-[#E91E8C]/20 shadow-lg">
+                <Sparkles className="w-4 h-4 text-[#E91E8C]" />
+                <span className="text-sm font-bold text-[#E91E8C] tracking-wide">
+                  {t("hero.badge")}
+                </span>
+              </div>
             </div>
 
-            {/* Main Headline */}
-            <div className="space-y-4">
+            {/* Headline */}
+            <div className="space-y-2">
               <h1
                 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight"
                 style={{
                   fontFamily: "'Playfair Display', 'Georgia', serif",
-                  background:
-                    "linear-gradient(135deg, #E91E8C 0%, #9C27B0 50%, #E91E8C 100%)",
+                  background: "linear-gradient(135deg, #E91E8C 0%, #9C27B0 50%, #E91E8C 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -131,9 +133,8 @@ export function Hero() {
               >
                 Monginis
               </h1>
-
               <h2
-                className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight"
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight"
                 style={{ fontFamily: "'Playfair Display', 'Georgia', serif" }}
               >
                 {t("hero.headline")}
@@ -142,7 +143,7 @@ export function Hero() {
 
             {/* Subtitle */}
             <p
-              className="text-xl text-gray-600 font-medium max-w-lg"
+              className="text-base sm:text-lg text-gray-600 font-medium"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
               {t("hero.subheadingPrefix")}{" "}
@@ -150,71 +151,67 @@ export function Hero() {
               {t("hero.subheadingSuffix")}
             </p>
 
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-4 pt-2">
+            {/* Trust Badges */}
+            <div className="flex flex-wrap gap-3">
               <div className="flex items-center gap-2 px-4 py-2 bg-white/80 rounded-full border border-[#E91E8C]/10 shadow-sm">
-                <Gift className="w-5 h-5 text-[#E91E8C]" />
-                <span className="text-sm font-semibold text-gray-700">
-                  {t("hero.trust1")}
-                </span>
+                <Gift className="w-4 h-4 text-[#E91E8C]" />
+                <span className="text-sm font-semibold text-gray-700">{t("hero.trust1")}</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-white/80 rounded-full border border-[#E91E8C]/10 shadow-sm">
-                <Heart className="w-5 h-5 text-[#E91E8C]" />
-                <span className="text-sm font-semibold text-gray-700">
-                  {t("hero.trust2")}
-                </span>
+                <Heart className="w-4 h-4 text-[#E91E8C]" />
+                <span className="text-sm font-semibold text-gray-700">{t("hero.trust2")}</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 w-full">
               <button
                 onClick={() => scrollToSection("products")}
-                className="group px-8 py-4 bg-gradient-to-r from-[#E91E8C] to-[#FF6BB5] text-white font-bold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2"
+                className="group w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#E91E8C] to-[#FF6BB5] text-white font-bold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 {t("hero.cta1")}
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-
               <button
                 onClick={() => scrollToSection("inquiry-bottom")}
-                className="px-8 py-4 border-2 border-[#E91E8C] text-[#E91E8C] font-bold rounded-full hover:bg-[#E91E8C] hover:text-white transition-all duration-300 transform hover:scale-105 bg-white shadow-lg"
+                className="w-full sm:w-auto px-8 py-4 border-2 border-[#E91E8C] text-[#E91E8C] font-bold rounded-full hover:bg-[#E91E8C] hover:text-white transition-all duration-300 transform hover:scale-105 bg-white shadow-lg text-center"
               >
                 {t("hero.cta2")}
               </button>
             </div>
           </div>
 
-          {/* RIGHT SIDE - Product Showcase Box */}
-          <div className="relative flex justify-center items-center">
-            {/* Decorative Ring */}
-            <div className="absolute w-[450px] h-[450px] border-2 border-dashed border-[#E91E8C]/20 rounded-full animate-spin-slow" />
-            <div className="absolute w-[380px] h-[380px] border border-[#E91E8C]/10 rounded-full" />
+          {/* RIGHT SIDE - Product Card */}
+          <div className="relative flex justify-center items-center w-full px-6 sm:px-8 lg:px-0">
+
+            {/* Decorative Rings — desktop only */}
+            <div className="hidden lg:block absolute w-[450px] h-[450px] border-2 border-dashed border-[#E91E8C]/20 rounded-full animate-spin-slow" />
+            <div className="hidden lg:block absolute w-[380px] h-[380px] border border-[#E91E8C]/10 rounded-full" />
 
             {/* Main Product Card */}
-            <div className="relative bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl border border-[#E91E8C]/10 p-8 w-full max-w-md">
+            <div className="relative bg-white/90 backdrop-blur-xl rounded-3xl shadow-2xl border border-[#E91E8C]/10 p-6 w-full lg:max-w-md">
               {/* Pink Glow */}
               <div className="absolute -inset-1 bg-gradient-to-r from-[#E91E8C] to-[#FF6BB5] rounded-3xl blur-xl opacity-20" />
 
               <div className="relative">
                 {/* Tag Badge */}
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-gradient-to-r from-[#E91E8C] to-[#FF6BB5] text-white text-xs font-bold rounded-full shadow-lg z-10">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-gradient-to-r from-[#E91E8C] to-[#FF6BB5] text-white text-xs font-bold rounded-full shadow-lg z-10 whitespace-nowrap">
                   {t(currentProduct.tagKey)}
                 </div>
 
                 {/* Product Image Container */}
-                <div className="relative h-[280px] flex items-center justify-center bg-gradient-to-b from-[#FFF5F7] to-white rounded-2xl mb-6 overflow-hidden">
+                <div className="relative h-56 sm:h-64 lg:h-72 flex items-center justify-center bg-gradient-to-b from-[#FFF5F7] to-white rounded-2xl mb-5 overflow-hidden">
                   <div className="absolute inset-0 opacity-30">
                     <div className="absolute top-4 left-4 w-8 h-8 bg-[#E91E8C]/20 rounded-full" />
                     <div className="absolute bottom-4 right-4 w-12 h-12 bg-[#FF6BB5]/20 rounded-full" />
                     <div className="absolute top-1/2 right-8 w-6 h-6 bg-[#E91E8C]/10 rounded-full" />
                   </div>
 
-                  <div className="relative w-full h-full flex items-center justify-center p-6">
+                  <div className="relative w-full h-full flex items-center justify-center p-4">
                     {products.map((product, index) => (
                       <div
                         key={product.id}
-                        className={`absolute inset-0 flex items-center justify-center transition-all duration-600 ease-out ${
+                        className={`absolute inset-0 flex items-center justify-center transition-all duration-500 ease-out ${
                           index === currentIndex
                             ? "opacity-100 scale-100 translate-y-0"
                             : "opacity-0 scale-90 translate-y-4"
@@ -223,16 +220,17 @@ export function Hero() {
                         <img
                           src={product.image}
                           alt={t(product.nameKey)}
-                          className="max-w-full max-h-full w-auto h-auto object-contain drop-shadow-xl"
+                          className="max-w-full max-h-full w-auto h-auto object-contain"
                           style={{
                             filter: "drop-shadow(0 20px 40px rgba(233, 30, 140, 0.2))",
+                            maxHeight: "200px",
                           }}
                         />
                       </div>
                     ))}
                   </div>
 
-                  <div className="absolute top-4 right-4 px-3 py-1 bg-[#E91E8C] text-white text-xs font-bold rounded-full flex items-center gap-1">
+                  <div className="absolute top-3 right-3 px-2.5 py-1 bg-[#E91E8C] text-white text-xs font-bold rounded-full flex items-center gap-1">
                     <Sparkles className="w-3 h-3" />
                     {t("hero.newBadge")}
                   </div>
@@ -241,7 +239,7 @@ export function Hero() {
                 {/* Product Name */}
                 <div className="text-center space-y-2">
                   <h3
-                    className="text-2xl font-bold text-gray-800"
+                    className="text-xl sm:text-2xl font-bold text-gray-800"
                     style={{ fontFamily: "'Playfair Display', serif" }}
                   >
                     {t(currentProduct.nameKey)}
@@ -250,22 +248,20 @@ export function Hero() {
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 text-[#FFB800] fill-current" />
                     ))}
-                    <span className="text-sm text-gray-500 ml-2">
-                      {t("hero.reviews")}
-                    </span>
+                    <span className="text-sm text-gray-500 ml-2">{t("hero.reviews")}</span>
                   </div>
                 </div>
 
                 {/* Navigation Dots */}
-                <div className="flex justify-center gap-2 mt-6">
+                <div className="flex justify-center gap-2 mt-4">
                   {products.map((_, index) => (
                     <button
                       key={index}
                       onClick={() => goToSlide(index)}
-                      className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                      className={`h-2.5 rounded-full transition-all duration-300 ${
                         index === currentIndex
                           ? "bg-[#E91E8C] w-8"
-                          : "bg-[#E91E8C]/30 hover:bg-[#E91E8C]/50"
+                          : "bg-[#E91E8C]/30 w-2.5 hover:bg-[#E91E8C]/50"
                       }`}
                     />
                   ))}
@@ -273,25 +269,24 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Side Navigation Arrows */}
+            {/* Arrows */}
             <button
               onClick={prevSlide}
-              className="absolute -left-4 lg:-left-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-xl border border-[#E91E8C]/20 flex items-center justify-center text-[#E91E8C] hover:bg-[#E91E8C] hover:text-white transition-all duration-300 hover:scale-110 z-20"
+              className="absolute -left-1 sm:-left-3 lg:-left-12 top-1/2 -translate-y-1/2 w-9 h-9 lg:w-12 lg:h-12 rounded-full bg-white shadow-xl border border-[#E91E8C]/20 flex items-center justify-center text-[#E91E8C] hover:bg-[#E91E8C] hover:text-white transition-all duration-300 hover:scale-110 z-20"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-4 h-4 lg:w-6 lg:h-6" />
             </button>
-
             <button
               onClick={nextSlide}
-              className="absolute -right-4 lg:-right-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-xl border border-[#E91E8C]/20 flex items-center justify-center text-[#E91E8C] hover:bg-[#E91E8C] hover:text-white transition-all duration-300 hover:scale-110 z-20"
+              className="absolute -right-1 sm:-right-3 lg:-right-12 top-1/2 -translate-y-1/2 w-9 h-9 lg:w-12 lg:h-12 rounded-full bg-white shadow-xl border border-[#E91E8C]/20 flex items-center justify-center text-[#E91E8C] hover:bg-[#E91E8C] hover:text-white transition-all duration-300 hover:scale-110 z-20"
             >
-              <ChevronRight className="w-6 h-6" />
+              <ChevronRight className="w-4 h-4 lg:w-6 lg:h-6" />
             </button>
           </div>
         </div>
       </div>
 
-      {/* Bottom Progress Bar */}
+      {/* Progress Bar */}
       <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-[#E91E8C]/10">
         <div
           className="h-full transition-all duration-500 ease-out rounded-full"
@@ -304,24 +299,16 @@ export function Hero() {
 
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@400;500;700&display=swap');
-
         @keyframes float {
           0%, 100% { transform: translateY(0) rotate(0deg); }
           50% { transform: translateY(-15px) rotate(3deg); }
         }
-
         @keyframes spin-slow {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
-
-        .animate-float {
-          animation: float 5s ease-in-out infinite;
-        }
-
-        .animate-spin-slow {
-          animation: spin-slow 20s linear infinite;
-        }
+        .animate-float { animation: float 5s ease-in-out infinite; }
+        .animate-spin-slow { animation: spin-slow 20s linear infinite; }
       `}</style>
     </section>
   );

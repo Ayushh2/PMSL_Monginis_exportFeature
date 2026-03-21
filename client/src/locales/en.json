@@ -12,7 +12,7 @@
   },
   "navContact": {
     "phone": "+91 9876543210",
-    "email": "exports@monginis.com"
+    "email": "exports@monginis.net"
   },
   "languages": {
     "en": "English",
@@ -163,6 +163,7 @@
 },
   "footer": {
   "tagline": "Export-ready bakery products with consistent quality, trusted processes, and reliable packaging for global B2B partners.",
+  "followUs": "Follow Us",
   "quickLinks": "Quick Links",
   "highlights": "Highlights",
   "contact": "Contact",
@@ -171,7 +172,7 @@
   "h3": "Packaging & logistics support",
   "h4": "Fast inquiry & quotation process",
   "location": "Mumbai, Maharashtra, India",
-  "copyright": "© 2025 Monginis. All Rights Reserved.",
+  "copyright": "© 2026 Monginis. All Rights Reserved.",
   "trust1": "Secure communication",
   "trust2": "Export inquiry support",
   "trust3": "Quality-first process"
@@ -239,7 +240,7 @@
   ],
 
   "placeholderName": "Your Name",
-  "placeholderEmail": "Business Email",
+  "placeholderEmail": "Email",
   "placeholderPhone": "Phone Number",
   "placeholderCountryCode": "Country Code",
   "placeholderCountry": "Country",
@@ -254,7 +255,7 @@
   "popupTitle": "Get the Brochure",
   "popupSubtitle": "Share your details to access the brochure instantly.",
   "close": "Close",
-  "placeholderPhoneNumber": "10-digit number",
+  "placeholderPhoneNumber": "Enter phone number",
   "download": "Download",
   "noSpam": "We use this only to support export inquiries. No spam.",
   "phoneValidation": "Phone number must be exactly 10 digits."

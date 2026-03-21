@@ -74,26 +74,28 @@ export function ProductShowcase() {
       }}
     >
       <div style={{
-        background: '#FFF0F5',
-        height: '160px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '1rem',
-        overflow: 'hidden',
-        flexShrink: 0,
-      }}>
-        <img
-          className="pc-img"
-          src={product.image}
-          alt={t(`products.${product.key}`)}
-          style={{
-            maxHeight: '140px',
-            maxWidth: '100%',
-            objectFit: 'contain',
-          }}
-        />
-      </div>
+  background: '#FFF0F5',
+  height: '160px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: product.key === 'swiss_roll' ? '0' : '1rem',
+  overflow: 'hidden',
+  flexShrink: 0,
+}}>
+  <img
+    className="pc-img"
+    src={product.image}
+    alt={t(`products.${product.key}`)}
+    style={{
+      maxHeight: '140px',
+      maxWidth: '100%',
+      width: product.key === 'swiss_roll' ? '100%' : 'auto',
+      height: product.key === 'swiss_roll' ? '100%' : 'auto',
+      objectFit: product.key === 'swiss_roll' ? 'cover' : 'contain',
+    }}
+  />
+</div>
       <div style={{
         padding: '0.65rem 0.75rem 0.75rem',
         textAlign: 'center',
@@ -365,21 +367,25 @@ export function ProductShowcase() {
           {/* Product Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10">
             {products.map((product, index) => (
-              <div
-                key={product.id}
-                className={`product-card group flex flex-col rounded-2xl overflow-hidden border border-pink-100 shadow-sm bg-white ${
-                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                } transition-all duration-500`}
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <div className="bg-[#FFF0F5] flex items-center justify-center p-6 sm:p-5" style={{ height: '240px' }}>
-                  <img
-                    src={product.image}
-                    alt={t(`products.${product.key}`)}
-                    className="product-img h-full w-full object-contain drop-shadow-md"
-                    style={{ maxHeight: '200px' }}
-                  />
-                </div>
+  <div
+    key={product.id}
+    className={`product-card group flex flex-col rounded-2xl overflow-hidden border border-pink-100 shadow-sm bg-white ${
+      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+    } transition-all duration-500`}
+    style={{ transitionDelay: `${index * 100}ms` }}
+  >
+    <div className="bg-[#FFF0F5] flex items-center justify-center" style={{ height: '240px', padding: index < 2 ? '12px' : '0' }}>
+      <img
+        src={product.image}
+        alt={t(`products.${product.key}`)}
+        className="product-img drop-shadow-md"
+        style={{ 
+          width: '100%',
+          height: '100%',
+          objectFit: index < 2 ? 'contain' : 'cover',
+        }}
+      />
+    </div>
                 <div
                   className="flex items-center justify-center px-4 py-3 bg-white border-t border-pink-100"
                   style={{ minHeight: '52px' }}

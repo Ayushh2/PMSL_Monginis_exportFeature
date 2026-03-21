@@ -163,6 +163,7 @@
 },
   "footer": {
   "tagline": "منتجات مخبوزات جاهزة للتصدير بجودة ثابتة وعمليات موثوقة وتغليف مناسب لشركاء الأعمال B2B حول العالم.",
+  "followUs": "تابعنا",
   "quickLinks": "روابط سريعة",
   "highlights": "أبرز المميزات",
   "contact": "تواصل معنا",
@@ -239,7 +240,7 @@
   ],
 
   "placeholderName": "اسمك",
-  "placeholderEmail": "البريد الإلكتروني للعمل",
+  "placeholderEmail": "البريد الإلكتروني",
   "placeholderPhone": "رقم الهاتف",
   "placeholderCountryCode": "رمز الدولة",
   "placeholderCountry": "الدولة",
@@ -254,7 +255,7 @@
   "popupTitle": "الحصول على الكتيّب",
   "popupSubtitle": "يرجى إدخال بياناتك للوصول إلى الكتيّب فورًا.",
   "close": "إغلاق",
-  "placeholderPhoneNumber": "رقم من 10 أرقام",
+  "placeholderPhoneNumber": "أدخل رقم الهاتف",
   "download": "تحميل",
   "noSpam": "نستخدم هذه البيانات فقط لدعم استفسارات التصدير. بدون رسائل مزعجة.",
   "phoneValidation": "يجب أن يكون رقم الهاتف مكوّنًا من 10 أرقام بالضبط."

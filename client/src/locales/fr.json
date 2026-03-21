@@ -163,6 +163,7 @@
 },
   "footer": {
   "tagline": "Des produits de boulangerie prêts à l’exportation avec une qualité constante, des processus fiables et un emballage adapté pour les partenaires B2B à l’international.",
+  "followUs": "Suivez-nous",
   "quickLinks": "Liens rapides",
   "highlights": "Points forts",
   "contact": "Contact",
@@ -239,7 +240,7 @@
   ],
 
   "placeholderName": "Votre nom",
-  "placeholderEmail": "E-mail professionnel",
+  "placeholderEmail": "Email",
   "placeholderPhone": "Numéro de téléphone",
   "placeholderCountryCode": "Indicatif pays",
   "placeholderCountry": "Pays",
@@ -254,7 +255,7 @@
   "popupTitle": "Obtenir la brochure",
   "popupSubtitle": "Renseignez vos informations pour accéder immédiatement à la brochure.",
   "close": "Fermer",
-  "placeholderPhoneNumber": "Numéro à 10 chiffres",
+  "placeholderPhoneNumber": "Entrez le numéro de téléphone",
   "download": "Télécharger",
   "noSpam": "Utilisé uniquement pour l’accompagnement des demandes export. Aucun spam.",
   "phoneValidation": "Le numéro de téléphone doit contenir exactement 10 chiffres."

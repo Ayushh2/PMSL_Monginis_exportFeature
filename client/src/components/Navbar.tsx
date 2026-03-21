@@ -112,7 +112,7 @@ export function Navbar() {
           background: none;
           border: none;
           cursor: pointer;
-          padding: 0.35rem 0.6rem;
+          padding: 0.55rem 0.6rem;
           font-size: 0.72rem;
           font-weight: 600;
           letter-spacing: 0.03em;
@@ -123,10 +123,26 @@ export function Navbar() {
           white-space: nowrap;
           line-height: 1.05;
           text-align: center;
+          position: relative;
+          min-height: 44px;
+        }
+        .nav-btn::after {
+          content: '';
+          position: absolute;
+          bottom: 6px;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background: #E91E8C;
+          transition: width 0.25s ease, left 0.25s ease;
         }
         .nav-btn:hover {
           color: #E91E8C;
           background: #fff0f7;
+        }
+        .nav-btn:hover::after {
+          width: 60%;
+          left: 20%;
         }
         .two-line {
           white-space: pre-line;
@@ -228,16 +244,27 @@ export function Navbar() {
           background: #fff0f7;
         }
         .burger-lines {
-          width: 18px;
-          height: 12px;
+          width: 20px;
+          height: 14px;
           display: grid;
-          gap: 3px;
+          gap: 4px;
+          position: relative;
         }
         .burger-lines span {
           height: 2px;
           background: #444;
           border-radius: 99px;
           display: block;
+          transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .burger.open .burger-lines span:nth-child(1) {
+          transform: translateY(6px) rotate(45deg);
+        }
+        .burger.open .burger-lines span:nth-child(2) {
+          opacity: 0;
+        }
+        .burger.open .burger-lines span:nth-child(3) {
+          transform: translateY(-6px) rotate(-45deg);
         }
 
         /* ✅ Mobile */
@@ -269,6 +296,11 @@ export function Navbar() {
           backdrop-filter: blur(10px);
           border-bottom: 1px solid #f0f0f0;
           box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+          animation: slideDown 0.25s ease-out;
+        }
+        @keyframes slideDown {
+          from { opacity: 0; transform: translateY(-10px); }
+          to { opacity: 1; transform: translateY(0); }
         }
         .mobile-inner {
           max-width: 1060px;
@@ -292,6 +324,7 @@ export function Navbar() {
           font-weight: 700;
           color: #222;
           cursor: pointer;
+          min-height: 52px;
         }
         .mobile-link small {
           display: block;
@@ -384,8 +417,8 @@ export function Navbar() {
 
             {/* burger appears only on mobile & stays at far right */}
             <button
-              className="burger"
-              aria-label="Open menu"
+              className={`burger${isMenuOpen ? " open" : ""}`}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               onClick={() => {
                 setIsMenuOpen((v) => !v);
                 setIsLangOpen(false);
@@ -404,8 +437,8 @@ export function Navbar() {
                 +91 9876543210
               </a>
               <span className="contact-sep" />
-              <a href="mailto:exports@monginis.com" className="contact-link">
-                exports@monginis.com
+              <a href="mailto:exports@monginis.net" className="contact-link">
+                exports@monginis.net
               </a>
             </div>
           </div>
@@ -431,7 +464,7 @@ export function Navbar() {
 
               <div className="mobile-contact">
                 <a href="tel:+919876543210">Call: +91 9876543210</a>
-                <a href="mailto:exports@monginis.com">Email: exports@monginis.com</a>
+                <a href="mailto:exports@monginis.net">Email: exports@monginis.net</a>
               </div>
             </div>
           </div>
