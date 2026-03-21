@@ -165,26 +165,25 @@ export function Footer() {
           </div>
 
           {/* Divider */}
-          <div className="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-            <p className="text-xs text-white/70">
-              {t("footer.copyright")}
-            </p>
-
-            <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs text-white/70">
-              <span className="inline-flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-[#E91E8C]" />
-                {t("footer.trust1")}
-              </span>
-              <span className="text-white/25">•</span>
-              <span className="inline-flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-[#E91E8C]" />
-                {t("footer.trust2")}
-              </span>
-              <span className="text-white/25">•</span>
-              <span className="inline-flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-[#E91E8C]" />
-                {t("footer.trust3")}
-              </span>
+          <div className="mt-8 pt-5 border-t border-white/10">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5">
+              <p className="text-xs text-white/60">
+                {t("footer.copyright")}
+              </p>
+              <div className="flex flex-row items-center gap-3 text-xs text-white/60">
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#E91E8C] flex-shrink-0" />
+                  {t("footer.trust1")}
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#E91E8C] flex-shrink-0" />
+                  {t("footer.trust2")}
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#E91E8C] flex-shrink-0" />
+                  {t("footer.trust3")}
+                </span>
+              </div>
             </div>
           </div>
         </div>
