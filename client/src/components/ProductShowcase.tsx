@@ -73,13 +73,13 @@ export function ProductShowcase() {
         height: '100%',
       }}
     >
-      <div style={{
+     <div style={{
   background: '#FFF0F5',
   height: '160px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  padding: product.key === 'swiss_roll' ? '0' : '1rem',
+  padding: product.key === 'swiss_roll' ? '0' : product.key === 'muffins' ? '0.75rem 0.75rem 0.75rem 2.5rem' : '0.75rem',
   overflow: 'hidden',
   flexShrink: 0,
 }}>
@@ -90,9 +90,10 @@ export function ProductShowcase() {
     style={{
       maxHeight: '140px',
       maxWidth: '100%',
+      objectFit: product.key === 'swiss_roll' ? 'cover' : 'contain',
       width: product.key === 'swiss_roll' ? '100%' : 'auto',
       height: product.key === 'swiss_roll' ? '100%' : 'auto',
-      objectFit: product.key === 'swiss_roll' ? 'cover' : 'contain',
+      imageRendering: 'auto',
     }}
   />
 </div>
