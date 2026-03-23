@@ -126,7 +126,7 @@ Brochure Download Request
 
 Name: ${name}
 Email: ${email}
-Phone: ${phone}
+${phone ? `Phone: ${phone}` : 'Phone: Not provided'}
 Language: ${language}
 `.trim();
 
