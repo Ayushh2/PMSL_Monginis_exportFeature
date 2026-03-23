@@ -210,9 +210,9 @@ async function handleBrochureLead(request, env, origin) {
 
   const { name, email, phone, language = "en" } = body;
 
-  if (!name || !email || !phone) {
-    return corsResponse({ success: false, message: "Name, email, and phone are required" }, 400, origin);
-  }
+  if (!name || !email) {
+  return corsResponse({ success: false, message: "Name and email are required" }, 400, origin);
+}
 
   let lead;
   try {
