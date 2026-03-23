@@ -49,7 +49,7 @@ export function Quality() {
     { src: '/assets/man1.jpg', alt: t('quality.facility1'), label: t('quality.facility1') },
     { src: '/assets/man2.jpg', alt: t('quality.facility2'), label: t('quality.facility2') },
     { src: '/assets/man3.jpg', alt: t('quality.facility3'), label: t('quality.facility3') },
-    { src: '/assets/man4.jpg', alt: t('quality.facility4'), label: t('quality.facility4') },
+    { src: '/assets/man4.jpeg', alt: t('quality.facility4'), label: t('quality.facility4') },
   ];
 
   return (

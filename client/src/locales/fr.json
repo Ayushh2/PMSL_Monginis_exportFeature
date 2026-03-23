@@ -63,9 +63,9 @@
   "subtitle": "Découvrez nos principales catégories de produits conçues pour les marchés internationaux. Pour des spécifications détaillées, les formats d’emballage et le portefeuille complet de produits, veuillez consulter notre brochure officielle.",
 
   "cookies": "Cookies",
-  "savoury_biscuit": "Biscuits salés",
-  "swiss_roll": "Roulé suisse",
-  "special_cake_range": "Gamme de gâteaux spéciaux",
+  "savoury_biscuit": "Bakersware",
+  "swiss_roll": "Gâteaux longue conservation",
+  "special_cake_range": "Produits saisonniers",
 
   "khari": "Khari",
   "twisted_khari": "Khari torsadé",
@@ -74,7 +74,7 @@
   "muffins": "Muffins",
   "tiffin_cake": "Gâteau Tiffin",
   "slice_cake": "Gâteau en tranches",
-  "special_cakes_range": "Gamme de gâteaux spéciaux",
+  "special_cakes_range": "Produits saisonniers",
 
   "fullRange": "Gamme complète",
   "allCategoriesTitle": "Toutes les catégories de produits",
@@ -157,7 +157,7 @@
   "highlight3Desc": "Un centre R&D dédié nous permet de développer et d’élargir notre gamme de produits, en nous adaptant rapidement aux préférences des consommateurs et aux tendances des marchés d’exportation.",
 
   "facility1": "Site de fabrication",
-  "facility2": "Laboratoire de contrôle qualité",
+  "facility2": "Flotte logistique et de distribution",
   "facility3": "Ligne de production",
   "facility4": "Centre R&D"
 },
@@ -187,7 +187,7 @@
   "cancel": "Annuler",
   "submit": "Obtenir la brochure",
   "submitting": "Envoi…",
-  "formError": "Veuillez saisir votre nom, votre e-mail et votre numéro de téléphone.",
+  "formError": "Veuillez entrer votre nom et email.",
   "note": "Nous vous contacterons uniquement si nécessaire pour l’accompagnement export.",
   "badge": "Monginis Export",
   "companyBrochure": "Brochure de l’entreprise",

@@ -75,12 +75,12 @@ export function DownloadBrochure() {
     const phone = form.phone.trim();
     const country = form.country.trim();
 
-    if (!name || !email || !phone || !country) {
+    if (!name || !email || !country) {
       setError(t("brochure.formError"));
       return;
     }
 
-    if (!validatePhone10(phone)) {
+    if (phone && !validatePhone10(phone)) {
       setPhoneError(t("brochure.phoneValidation"));
       return;
     }
@@ -284,7 +284,10 @@ export function DownloadBrochure() {
 
                   {/* Phone with compact code selector */}
                   <div>
-                    <label className={labelClass}>{t("brochure.phone")}</label>
+                    <label className={labelClass}>
+                      {t("brochure.phone")}
+                      <span style={{ fontSize: '0.7rem', fontWeight: 400, color: '#9ca3af', marginLeft: '6px', textTransform: 'none', letterSpacing: 'normal' }}>(optional)</span>
+                    </label>
                     <div className="flex gap-2 items-start">
                       <div className="flex flex-col" style={{ minWidth: "80px", maxWidth: "80px" }}>
                         <select
@@ -304,8 +307,7 @@ export function DownloadBrochure() {
                           <option value="+39">🇮🇹 +39</option>
                           <option value="+34">🇪🇸 +34</option>
                         </select>
-                        <span className="text-[10px] text-gray-300 mt-1 pl-1">(optional)</span>
-                      </div>
+                                              </div>
                       <input
                         placeholder={t("brochure.placeholderPhoneNumber")}
                         value={form.phone}

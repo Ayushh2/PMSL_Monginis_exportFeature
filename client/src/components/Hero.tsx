@@ -166,7 +166,9 @@ export function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 w-full">
               <button
-                onClick={() => scrollToSection("products")}
+                onClick={() => {
+                  window.dispatchEvent(new CustomEvent("openProductModal"));
+                }}
                 className="group w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#E91E8C] to-[#FF6BB5] text-white font-bold rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 {t("hero.cta1")}

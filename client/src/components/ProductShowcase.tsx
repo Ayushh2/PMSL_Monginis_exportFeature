@@ -45,6 +45,12 @@ export function ProductShowcase() {
     return () => { document.body.style.overflow = ''; };
   }, [showModal]);
 
+  useEffect(() => {
+    const handler = () => setShowModal(true);
+    window.addEventListener("openProductModal", handler);
+    return () => window.removeEventListener("openProductModal", handler);
+  }, []);
+
   const scrollToBrochure = () => {
     setShowModal(false);
     setTimeout(() => {
@@ -416,6 +422,7 @@ export function ProductShowcase() {
             </div>
 
             <button
+              id="explore-all-btn"
               type="button"
               onClick={() => setShowModal(true)}
               className="group inline-flex items-center gap-2.5 text-white font-semibold rounded-full transition-all duration-300 hover:-translate-y-1"
