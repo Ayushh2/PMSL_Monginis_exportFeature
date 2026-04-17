@@ -32,20 +32,28 @@ function corsResponse(body, status = 200, origin = "") {
 }
 
 async function supabaseInsert(env, table, data) {
+  const supabaseKey = env.SUPABASE_SERVICE_ROLE_KEY || env.SUPABASE_ANON_KEY || SUPABASE_ANON_KEY;
+  if (!supabaseKey) {
+    throw new Error("Supabase key is not configured");
+  }
+
   const url = `${SUPABASE_URL}/rest/v1/${table}`;
   const res = await fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "apikey": SUPABASE_ANON_KEY,
-      "Authorization": `Bearer ${SUPABASE_ANON_KEY}`,
+      "apikey": supabaseKey,
+      "Authorization": `Bearer ${supabaseKey}`,
       "Prefer": "return=representation",
     },
     body: JSON.stringify(data),
   });
 
   const result = await res.json();
-  if (!res.ok) throw new Error(result?.message || `Supabase error: ${res.status}`);
+  if (!res.ok) {
+    const details = result?.message || result?.error_description || result?.details || JSON.stringify(result);
+    throw new Error(`Supabase error: ${res.status} ${details}`);
+  }
   return Array.isArray(result) ? result[0] : result;
 }
 
@@ -120,12 +128,13 @@ Monginis Export Team
   });
 }
 
-async function sendBrochureLeadEmail(env, { name, email, phone, language }) {
+async function sendBrochureLeadEmail(env, { name, email, phone, country, language }) {
   const adminText = `
 Brochure Download Request
 
 Name: ${name}
 Email: ${email}
+${country ? `Country: ${country}` : "Country: Not provided"}
 ${phone ? `Phone: ${phone}` : 'Phone: Not provided'}
 Language: ${language}
 `.trim();
@@ -208,22 +217,22 @@ async function handleBrochureLead(request, env, origin) {
   try { body = await request.json(); }
   catch { return corsResponse({ success: false, message: "Invalid JSON" }, 400, origin); }
 
-  const { name, email, phone, language = "en" } = body;
+  const { name, email, phone, country, language = "en" } = body;
 
   if (!name || !email) {
-  return corsResponse({ success: false, message: "Name and email are required" }, 400, origin);
-}
+    return corsResponse({ success: false, message: "Name and email are required" }, 400, origin);
+  }
 
   let lead;
   try {
-    lead = await supabaseInsert(env, "BrochureLead", { name, email, phone, language });
+    lead = await supabaseInsert(env, "BrochureLead", { name, email, phone, country, language });
   } catch (err) {
     console.error("❌ DB error:", err);
     return corsResponse({ success: false, message: "Failed to save lead" }, 500, origin);
   }
 
   try {
-    await sendBrochureLeadEmail(env, { name, email, phone, language });
+    await sendBrochureLeadEmail(env, { name, email, phone, country, language });
   } catch (mailErr) {
     console.error("❌ Brochure email failed:", mailErr.message);
   }
